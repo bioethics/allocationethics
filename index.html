@@ -15,6 +15,7 @@
     display: none;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var vowels = ['a', 'e', 'i', 'o', 'u'];
 var consts =  ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'qu', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z', 'tt', 'ch', 'sh'];
 
@@ -37,10 +38,11 @@ for (var i = 0; i < len; i++) {
 
 console.log(word);
 
+
 </script><tw-passagedata pid="1" name="Person" tags="" position="567,192">(display: &quot;simulate&quot;)
 
 (link: &quot;Refresh&quot;)[(go-to: &quot;Person&quot;)]
-(link: &quot;Generate multiple profiles&quot;)[(go-to: &quot;multiples&quot;)]</tw-passagedata><tw-passagedata pid="2" name="multiples" tags="" position="412.5,78">Treatment can only be provided to &#x27;&#x27;(random: 1,4)&#x27;&#x27; patients
+(link: &quot;Generate multiple profiles&quot;)[(go-to: &quot;multiples&quot;)]</tw-passagedata><tw-passagedata pid="2" name="multiples" tags="" position="412,78">Treatment can only be provided to &#x27;&#x27;(random: 1,4)&#x27;&#x27; patients
 
 (display: &quot;simulate&quot;)
 
@@ -53,18 +55,18 @@ console.log(word);
 (display: &quot;simulate&quot;)
 
 (link: &quot;Refresh?&quot;)[(go-to: &quot;multiples&quot;)]
-[[Generate single profile|Person]]</tw-passagedata><tw-passagedata pid="3" name="simulate" tags="" position="302.5,78">(set: $x to (array: &quot;B&quot;, &quot;BR&quot;,&quot;BL&quot;, &quot;C&quot;, &quot;CR&quot;, &quot;CH&quot;,&quot;D&quot;, &quot;F&quot;,&quot;FL&quot;,&quot;G&quot;,&quot;GL&quot;, &quot;GR&quot;, &quot;H&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;P&quot;,&quot;PL&quot;, &quot;PH&quot;,&quot;PR&quot;,&quot;R&quot;,&quot;S&quot;, &quot;SH&quot;, &quot;T&quot;, &quot;TR&quot;, &quot;W&quot;, &quot;WH&quot;, &quot;Z&quot;))\
+[[Generate single profile|Person]]</tw-passagedata><tw-passagedata pid="3" name="simulate" tags="" position="302,78">(set: $x to (array: &quot;B&quot;, &quot;BR&quot;,&quot;BL&quot;, &quot;C&quot;, &quot;CR&quot;, &quot;CH&quot;,&quot;D&quot;, &quot;F&quot;,&quot;FL&quot;,&quot;G&quot;,&quot;GL&quot;, &quot;GR&quot;, &quot;H&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;P&quot;,&quot;PL&quot;, &quot;PH&quot;,&quot;PR&quot;,&quot;R&quot;,&quot;S&quot;, &quot;SH&quot;, &quot;T&quot;, &quot;TR&quot;, &quot;W&quot;, &quot;WH&quot;, &quot;Z&quot;))\
 (set: $y to (array: &quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;E&quot;, &quot;E&quot;, &quot;E&quot;, &quot;I&quot;, &quot;I&quot;, &quot;O&quot;, &quot;O&quot;, &quot;O&quot;, &quot;U&quot;, &quot;OU&quot;, &quot;EA&quot;, &quot;EA&quot;, &quot;OO&quot;,&quot;OO&quot;, &quot;IE&quot;, &quot;Ö&quot;, &quot;EE&quot;))\
 (set: $z to (array: &quot;B&quot;, &quot;B&quot;, &quot;CH&quot;, &quot;CK&quot;, &quot;D&quot;, &quot;DGE&quot;, &quot;F&quot;,&quot;G&quot;, &quot;GH&quot;, &quot;L&quot;,&quot;LL&quot;,&quot;M&quot;,&quot;N&quot;,&quot;NG&quot;,&quot;P&quot;,&quot;PP&quot;,&quot;R&quot;,&quot;S&quot;,&quot;SS&quot;,&quot;SH&quot;, &quot;T&quot;))\
 &#x27;&#x27;Name: &#x27;&#x27;(if: (random: 1,4) is 4)[(print: 1st of (shuffled: ...$y))](print: 1st of (shuffled: ...$x))(print: 1st of (shuffled: ...$y))(print: 1st of (shuffled: ...$z))(if: (random:1,3) is 3)[(print: 1st of (shuffled: ...$y))(print: 1st of (shuffled: ...$z))](if: (random:1,4) is 4)[(print: 1st of (shuffled: ...$y))] (if: (random: 1,5) is 5)[(print: 1st of (shuffled: ...$y))](print: 1st of (shuffled: ...$x))(print: 1st of (shuffled: ...$y))(print: 1st of (shuffled: ...$z))(if: (random:1,2) is 2)[(print: 1st of (shuffled: ...$y))(print: 1st of (shuffled: ...$z))](if: (random:1,5) is 5)[(print: 1st of (shuffled: ...$y))]
 &#x27;&#x27;Age:&#x27;&#x27; (set: $age to (random: 1,(random: 75,90)))(print: $age)
 (if: $age &gt;17)[&#x27;&#x27;Children:&#x27;&#x27; (either: &quot;None&quot;, &quot;None&quot;, &quot;None&quot;, &quot;None&quot;, &quot;None&quot;, &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;3&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;)
-&#x27;&#x27;Occupation:&#x27;&#x27; (if: $age &gt; 64 and (random: 1,6)&gt;1)[Retired](else:)[(if: (random:1,100) &lt;=33)[Healthcare worker](else:)[(either: &quot;Unemployed&quot;, &quot;Unemployed&quot;, &quot;Unemployed&quot;, &quot;Philosopher&quot;, &quot;Office worker&quot;, &quot;Factory labourer&quot;, &quot;Agricultural labourer&quot;, &quot;Social worker&quot;, &quot;Teacher&quot;, &quot;Lawyer&quot;, &quot;Business manager&quot;, &quot;Used car salesman&quot;, &quot;Athlete&quot;)]]
+&#x27;&#x27;Occupation:&#x27;&#x27; (if: $age &gt; 64 and (random: 1,6)&gt;1)[Retired](else:)[(if: (random:1,100) &lt;=33)[(either: &quot;Healthcare worker&quot;, &quot;Healthcare worker&quot;, &quot;Law enforcement&quot;, &quot;National security&quot;)](else:)[(either: &quot;Unemployed&quot;, &quot;Unemployed&quot;, &quot;Unemployed&quot;, &quot;Philosopher&quot;, &quot;Office worker&quot;, &quot;Factory labourer&quot;, &quot;Agricultural labourer&quot;, &quot;Social worker&quot;, &quot;Teacher&quot;, &quot;Lawyer&quot;, &quot;Business manager&quot;, &quot;Used car salesman&quot;, &quot;Athlete&quot;)]]
 ]\
 &#x27;&#x27;Prognosis if treated:&#x27;&#x27; (either: &quot;Poor&quot;, &quot;Fair&quot;, &quot;Good&quot;, &quot;Good&quot;, &quot;Excellent&quot;)
 (if: $age &lt; 12 and $age &gt;0)[(set: $interest to (array: &quot;Dinosaurs&quot;, &quot;Space&quot;, &quot;Pirates&quot;, &quot;Wizards&quot;, &quot;Witches&quot;, &quot;Princesses&quot;, &quot;Trucks&quot;, &quot;Lego&quot;))]\
-(else-if: $age &gt;=12)[(set: $interest to (array: &quot;Stamp collecting&quot;, &quot;Literature&quot;, &quot;Gardening&quot;, &quot;Netflix&quot;, &quot;Board games&quot;, &quot;Football&quot;, &quot;Jogging&quot;, &quot;Pokemon Go&quot;, &quot;Classical music&quot;, &quot;Contemporary music&quot;, &quot;Sleeping&quot;, &quot;Volunteering for charity&quot;, &quot;Donating money to charity&quot;, &quot;Committing arson&quot;, &quot;Commiting murder&quot;, &quot;Committing larceny&quot;))]\
-(if: (random: 1,4) is 1)[&#x27;&#x27;Other notes:&#x27;&#x27; (either: &quot;Has undergone cognitive enhancement&quot;, &quot;Has undergone moral enhancement&quot;, &quot;Is the clone of a famous scientist&quot;)
+(else-if: $age &gt;=12)[(set: $interest to (array: &quot;Stamp collecting&quot;, &quot;Literature&quot;, &quot;Gardening&quot;, &quot;Netflix&quot;, &quot;Board games&quot;, &quot;Football&quot;, &quot;Jogging&quot;, &quot;Pokemon Go&quot;, &quot;Classical music&quot;, &quot;Contemporary music&quot;, &quot;Sleeping&quot;, &quot;Volunteering for charity&quot;, &quot;Donating money to charity&quot;, &quot;Committing arson&quot;, &quot;Committing murder&quot;, &quot;Committing larceny&quot;))]\
+(if: (random: 1,4) is 1)[&#x27;&#x27;Other notes:&#x27;&#x27; (either: &quot;Has undergone cognitive enhancement&quot;, &quot;Has undergone moral enhancement&quot;, &quot;Is the clone of a famous scientist&quot;, &quot;Is pregnant.&quot;, &quot;Is pregnant.&quot;)
 ]\
 (set: $interest to (shuffled: ...$interest))\
 &#x27;&#x27;Interests:&#x27;&#x27; (print: 1st of $interest). (print: 2nd of $interest).</tw-passagedata></tw-storydata>
